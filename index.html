@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+    <title>Reclama tu Tarjeta Revolving</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center mb-12">
+        <div class="text-3xl font-extrabold tracking-tight">RECLAMATECH</div>
+        <div class="space-x-6 text-sm font-medium">
+          <a href="#" class="hover:text-yellow-400 transition duration-300"
+            >Buscar casos</a
+          >
+          <a href="#" class="hover:text-yellow-400 transition duration-300"
+            >Calculadora</a
+          >
+          <a href="#" class="hover:text-yellow-400 transition duration-300"
+            >Información</a
+          >
+          <a href="#" class="hover:text-yellow-400 transition duration-300"
+            >Sobre nosotros</a
+          >
+        </div>
+        <div>
+          <button
+            class="bg-white text-gray-900 px-5 py-2 rounded-full mr-3 font-semibold hover:bg-yellow-400 transition duration-300">
+            Registrarse
+          </button>
+          <button
+            class="bg-gray-700 px-5 py-2 rounded-full font-semibold hover:bg-gray-600 transition duration-300">
+            Iniciar sesión
+          </button>
+        </div>
+      </nav>
+
+      <!-- Ratings and stats -->
+      <div class="mb-10 text-center">
+        <div class="flex items-center justify-center mb-2">
+          <span class="text-yellow-400 text-2xl">★★★★★</span>
+          <span class="ml-2 text-lg font-semibold">6436 reseñas</span>
+        </div>
+        <div class="text-xl text-gray-300">
+          Más de 100.000 clientes han reclamado más de 100 millones de euros.
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div class="flex justify-between items-center relative">
+        <div class="w-1/2 pr-12">
+          <h1 class="text-6xl font-extrabold mb-6 leading-tight">
+            Reclama tu <span class="text-yellow-400">tarjeta revolving</span> en
+            minutos.
+          </h1>
+          <p class="text-xl mb-8 text-gray-300 leading-relaxed">
+            Obtén tu dinero más rápido. Crea un perfil, añade los detalles de tu
+            caso y aplica rápidamente a miles de abogados especializados en toda
+            España.
+          </p>
+          <ul class="space-y-3 text-lg">
+            <li class="flex items-center">
+              <span class="text-green-400 mr-2">✓</span> Contamos con expertos
+              en reclamaciones de tarjetas revolving
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-400 mr-2">✓</span> Proceso de aplicación
+              en 5 minutos
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-400 mr-2">✓</span> Seguimiento de tu caso
+              al detalle vía nuestra plataforma
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-400 mr-2">✓</span> Seguro y confidencial
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-2/5 bg-white rounded-lg p-8 text-gray-900 shadow-2xl relative">
+          <div class="text-green-600 font-bold mb-4 text-lg">
+            ✅ 100% de casos ganados
+          </div>
+          <h2 class="text-3xl font-bold mb-6">¡Empecemos!</h2>
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block mb-2 font-medium"
+                >Nombre completo</label
+              >
+              <input
+                type="text"
+                id="name"
+                placeholder="ej. Juan Pérez"
+                class="w-full p-3 border rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                required />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block mb-2 font-medium">Tu email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="ej. juan@gmail.com"
+                class="w-full p-3 border rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                required />
+            </div>
+            <div class="mb-6">
+              <label for="phone" class="block mb-2 font-medium"
+                >Teléfono (opcional)</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                placeholder="ej. 600123456"
+                class="w-full p-3 border rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center">
+              Empezar a reclamar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 ml-2"
+                viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sección de testimonios actualizada -->
+      <section class="mt-20">
+        <h2 class="text-3xl font-bold text-center mb-10">
+          Lo que dicen nuestros clientes
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonio 1 -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://i.pravatar.cc/100?img=1"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4 object-cover" />
+              <div>
+                <h3 class="font-semibold">María García</h3>
+                <p class="text-gray-400 text-sm">Madrid</p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "Gracias a ReclamaRev, recuperé más de 3000€ de mi tarjeta
+              revolving. El proceso fue rápido y sencillo."
+            </p>
+            <div class="text-yellow-400 mt-4">★★★★★</div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://i.pravatar.cc/100?img=2"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4 object-cover" />
+              <div>
+                <h3 class="font-semibold">Carlos Rodríguez</h3>
+                <p class="text-gray-400 text-sm">Barcelona</p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "Pensé que sería complicado, pero ReclamaRev me guió en todo el
+              proceso. En menos de un mes, mi caso estaba resuelto."
+            </p>
+            <div class="text-yellow-400 mt-4">★★★★★</div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://i.pravatar.cc/100?img=3"
+                alt="Avatar"
+                class="w-12 h-12 rounded-full mr-4 object-cover" />
+              <div>
+                <h3 class="font-semibold">Laura Martínez</h3>
+                <p class="text-gray-400 text-sm">Valencia</p>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "No sabía que podía reclamar los intereses de mi tarjeta.
+              ReclamaRev me informó y me ayudó a recuperar mi dinero. ¡Increíble
+              servicio!"
+            </p>
+            <div class="text-yellow-400 mt-4">★★★★★</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
