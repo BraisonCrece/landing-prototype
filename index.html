@@ -14,55 +14,67 @@
       }
     </style>
   </head>
-  <body class="bg-gray-900 text-white">
+  <body class="bg-gray-900 text-white min-h-screen min-w-screen">
     <div class="container mx-auto px-4 py-8">
       <!-- Navbar -->
-      <nav class="flex justify-between items-center mb-12">
+      <nav class="flex flex-wrap justify-between items-center mb-12">
         <div class="text-3xl font-extrabold tracking-tight">RECLAMATECH</div>
-        <div class="space-x-6 text-sm font-medium">
-          <a href="#" class="hover:text-yellow-400 transition duration-300"
-            >Buscar casos</a
-          >
-          <a href="#" class="hover:text-yellow-400 transition duration-300"
-            >Calculadora</a
-          >
-          <a href="#" class="hover:text-yellow-400 transition duration-300"
-            >Información</a
-          >
-          <a href="#" class="hover:text-yellow-400 transition duration-300"
-            >Sobre nosotros</a
-          >
+
+        <!-- Mobile Nav Button -->
+        <button class="lg:hidden text-white focus:outline-none" id="menu-toggle">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Nav -->
+        <div class="hidden w-full lg:flex lg:w-auto lg:space-x-6 text-sm font-medium" id="mobile-menu">
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Buscar casos</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Calculadora</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Información</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Sobre nosotros</a>
         </div>
-        <div>
-          <button
-            class="bg-white text-gray-900 px-5 py-2 rounded-full mr-3 font-semibold hover:bg-yellow-400 transition duration-300">
+
+        <!-- Desktop Nav -->
+        <div class="hidden w-full lg:flex lg:w-auto mt-4 lg:mt-0">
+          <button class="w-full lg:w-auto bg-white text-gray-900 px-5 py-2 rounded-full mr-3 font-semibold hover:bg-yellow-400 transition duration-300 mb-2 lg:mb-0">
             Registrarse
           </button>
-          <button
-            class="bg-gray-700 px-5 py-2 rounded-full font-semibold hover:bg-gray-600 transition duration-300">
+          <button class="w-full lg:w-auto bg-gray-700 px-5 py-2 rounded-full font-semibold hover:bg-gray-600 transition duration-300">
             Iniciar sesión
           </button>
         </div>
       </nav>
 
+      <!-- Mobile Nav Script -->
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+          document.getElementById('mobile-menu').classList.toggle('hidden');
+          document.querySelector('nav > div:last-child').classList.toggle('hidden');
+        });
+      </script>
+
       <!-- Ratings and stats -->
       <div class="mb-10 text-center">
         <div class="flex items-center justify-center mb-2">
-          <span class="text-yellow-400 text-2xl">★★★★★</span>
+          <span class="text-yellow-400 text-2xl">★★★★☆</span>
           <span class="ml-2 text-lg font-semibold">6436 reseñas</span>
         </div>
-        <div class="text-xl text-gray-300">
-          Más de 100.000 clientes han reclamado más de 100 millones de euros.
+        <div class="text-xl text-gray-400">
+          Más de 100.000 clientes afectados en España han reclamado más de 100 millones de euros.
         </div>
       </div>
 
       <!-- Main content -->
-      <div class="flex justify-between items-center relative">
-        <div class="w-1/2 pr-12">
-          <h1 class="text-6xl font-extrabold mb-6 leading-tight">
-            Reclama tu <span class="text-yellow-400">tarjeta revolving</span> en
-            minutos.
-          </h1>
+      <div class="flex flex-col lg:flex-row justify-between items-center relative">
+        <div class="w-full lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
+          <h1 class="text-5xl text-center lg:text-6xl font-extrabold mb-6 leading-tight">
+            Recupera tu dinero </h1>
+        <h2 class="text-4xl text-center lg:text-4xl font-extrabold mb-6 leading-tight">
+            <span class="text-yellow-400">Reclama tu tarjeta revolving</span> en
+            minutos y sin complicaciones.
+        </h2>
+          <img src="./imagen2.png" alt="Tarjeta Revolving" class="w-full h-auto mb-8 rounded">
           <p class="text-xl mb-8 text-gray-300 leading-relaxed">
             Obtén tu dinero más rápido. Crea un perfil, añade los detalles de tu
             caso y aplica rápidamente a miles de abogados especializados en toda
@@ -86,42 +98,42 @@
             </li>
           </ul>
         </div>
-        <div
-          class="w-2/5 bg-white rounded-lg p-8 text-gray-900 shadow-2xl relative">
-          <div class="text-green-600 font-bold mb-4 text-lg">
-            ✅ 100% de casos ganados
+
+        <!-- Form -->
+        <div class="w-full lg:w-2/5 bg-white rounded-lg p-8 text-gray-800 shadow-xl relative">
+          <div class="text-green-600 font-bold mb-4 text-lg flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            100% de casos ganados
           </div>
-          <h2 class="text-3xl font-bold mb-6">¡Empecemos!</h2>
+          <h2 class="text-3xl font-bold mb-6 text-gray-900">¡Empecemos!</h2>
           <form>
             <div class="mb-4">
-              <label for="name" class="block mb-2 font-medium"
-                >Nombre completo</label
-              >
+              <label for="name" class="block mb-2 font-medium text-gray-700">Nombre completo</label>
               <input
                 type="text"
                 id="name"
                 placeholder="ej. Juan Pérez"
-                class="w-full p-3 border rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                class="w-full p-3 border border-gray-300 rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
                 required />
             </div>
             <div class="mb-4">
-              <label for="email" class="block mb-2 font-medium">Tu email</label>
+              <label for="email" class="block mb-2 font-medium text-gray-700">Tu email</label>
               <input
                 type="email"
                 id="email"
                 placeholder="ej. juan@gmail.com"
-                class="w-full p-3 border rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                class="w-full p-3 border border-gray-300 rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
                 required />
             </div>
             <div class="mb-6">
-              <label for="phone" class="block mb-2 font-medium"
-                >Teléfono (opcional)</label
-              >
+              <label for="phone" class="block mb-2 font-medium text-gray-700">Teléfono (opcional)</label>
               <input
                 type="tel"
                 id="phone"
                 placeholder="ej. 600123456"
-                class="w-full p-3 border rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
+                class="w-full p-3 border border-gray-300 rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" />
             </div>
             <button
               type="submit"
@@ -142,7 +154,7 @@
         </div>
       </div>
 
-      <!-- Sección de testimonios actualizada -->
+      <!-- Testimonials -->
       <section class="mt-20">
         <h2 class="text-3xl font-bold text-center mb-10">
           Lo que dicen nuestros clientes
