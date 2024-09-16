@@ -14,33 +14,66 @@
       }
     </style>
   </head>
-  <body class="bg-gray-900 text-white min-h-screen min-w-screen">
+  <body class="bg-white text-gray-800 min-h-screen min-w-screen">
     <div class="container mx-auto px-4 py-8">
       <!-- Navbar -->
       <nav class="flex flex-wrap justify-between items-center mb-12">
-        <div class="text-3xl font-extrabold tracking-tight">RECLAMATECH</div>
+        <div class="text-3xl font-extrabold tracking-tight text-blue-600">
+          RECLAMATECH
+        </div>
 
         <!-- Mobile Nav Button -->
-        <button class="lg:hidden text-white focus:outline-none" id="menu-toggle">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        <button
+          class="lg:hidden text-gray-800 focus:outline-none"
+          id="menu-toggle">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
 
         <!-- Mobile Nav -->
-        <div class="hidden w-full lg:flex lg:w-auto lg:space-x-6 text-sm font-medium" id="mobile-menu">
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Buscar casos</a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Calculadora</a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Información</a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-yellow-400 transition duration-300">Sobre nosotros</a>
+        <div
+          class="hidden w-full lg:flex lg:w-auto lg:space-x-6 text-sm font-medium"
+          id="mobile-menu">
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 transition duration-300"
+            >Buscar casos</a
+          >
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 transition duration-300"
+            >Calculadora</a
+          >
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 transition duration-300"
+            >Información</a
+          >
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 transition duration-300"
+            >Sobre nosotros</a
+          >
         </div>
 
         <!-- Desktop Nav -->
         <div class="hidden w-full lg:flex lg:w-auto mt-4 lg:mt-0">
-          <button class="w-full lg:w-auto bg-white text-gray-900 px-5 py-2 rounded-full mr-3 font-semibold hover:bg-yellow-400 transition duration-300 mb-2 lg:mb-0">
+          <button
+            class="w-full lg:w-auto bg-blue-600 text-white px-5 py-2 rounded-full mr-3 font-semibold hover:bg-blue-700 transition duration-300 mb-2 lg:mb-0">
             Registrarse
           </button>
-          <button class="w-full lg:w-auto bg-gray-700 px-5 py-2 rounded-full font-semibold hover:bg-gray-600 transition duration-300">
+          <button
+            class="w-full lg:w-auto bg-gray-200 text-gray-800 px-5 py-2 rounded-full font-semibold hover:bg-gray-300 transition duration-300">
             Iniciar sesión
           </button>
         </div>
@@ -48,69 +81,121 @@
 
       <!-- Mobile Nav Script -->
       <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-          document.getElementById('mobile-menu').classList.toggle('hidden');
-          document.querySelector('nav > div:last-child').classList.toggle('hidden');
-        });
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden")
+            document
+              .querySelector("nav > div:last-child")
+              .classList.toggle("hidden")
+          })
       </script>
 
       <!-- Ratings and stats -->
       <div class="mb-10 text-center">
         <div class="flex items-center justify-center mb-2">
-          <span class="text-yellow-400 text-2xl">★★★★☆</span>
+          <span class="text-yellow-500 text-2xl">★★★★☆</span>
           <span class="ml-2 text-lg font-semibold">6436 reseñas</span>
         </div>
-        <div class="text-xl text-gray-400">
-          Más de 100.000 clientes afectados en España han reclamado más de 100 millones de euros.
+        <div class="text-xl text-gray-600">
+          Más de 100.000 clientes afectados en España han reclamado más de 100
+          millones de euros.
         </div>
       </div>
 
       <!-- Main content -->
-      <div class="flex flex-col lg:flex-row justify-between items-center relative">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center relative">
         <div class="w-full lg:w-1/2 lg:pr-12 mb-8 lg:mb-0">
-          <h1 class="text-5xl text-center lg:text-6xl font-extrabold mb-6 leading-tight">
-            Recupera tu dinero </h1>
-        <h2 class="text-4xl text-center lg:text-4xl font-extrabold mb-6 leading-tight">
-            <span class="text-yellow-400">Reclama tu tarjeta revolving</span> en
+          <h1
+            class="text-5xl text-center lg:text-6xl font-extrabold mb-6 leading-tight text-gray-900">
+            Recupera tu dinero
+          </h1>
+          <h2
+            class="text-4xl text-center lg:text-4xl font-extrabold mb-6 leading-tight text-gray-800">
+            <span class="text-blue-600">Reclama tu tarjeta revolving</span> en
             minutos y sin complicaciones.
-        </h2>
-          <img src="./imagen2.png" alt="Tarjeta Revolving" class="w-full h-auto mb-8 rounded">
-          <p class="text-xl mb-8 text-gray-300 leading-relaxed">
+          </h2>
+          <img
+            src="./imagen2.png"
+            alt="Tarjeta Revolving"
+            class="w-full h-auto mb-8 rounded" />
+          <p class="text-xl mb-8 text-gray-600 leading-relaxed">
             Obtén tu dinero más rápido. Crea un perfil, añade los detalles de tu
             caso y aplica rápidamente a miles de abogados especializados en toda
             España.
           </p>
-          <ul class="space-y-3 text-lg">
+          <ul class="space-y-3 text-lg text-gray-700">
             <li class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span> Contamos con expertos
+              <span class="text-green-500 mr-2">✓</span> Contamos con expertos
               en reclamaciones de tarjetas revolving
             </li>
             <li class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span> Proceso de aplicación
+              <span class="text-green-500 mr-2">✓</span> Proceso de aplicación
               en 5 minutos
             </li>
             <li class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span> Seguimiento de tu caso
+              <span class="text-green-500 mr-2">✓</span> Seguimiento de tu caso
               al detalle vía nuestra plataforma
             </li>
             <li class="flex items-center">
-              <span class="text-green-400 mr-2">✓</span> Seguro y confidencial
+              <span class="text-green-500 mr-2">✓</span> Seguro y confidencial
             </li>
           </ul>
         </div>
 
+        <!-- Arrow SVG (visible only on desktop) -->
+        <svg
+          fill="#000000"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 375.01 375.01"
+          xml:space="preserve"
+          class="hidden lg:block absolute right-1/2 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-32 h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 2xl:w-56 2xl:h-56">
+          <g>
+            <g>
+              <path
+                d="M330.254,210.966c-56.916,1.224-110.16,25.704-167.076,28.764c-16.524,0.612-33.048-1.224-45.9-8.568
+                c23.256-4.283,45.288-12.239,61.812-27.54c17.749-15.911,19.584-45.287,8.568-66.095c-10.404-19.584-36.72-20.196-55.08-15.3
+                C89.125,132.63,59.75,184.65,84.229,221.369c-26.928,1.836-53.856,0-80.172,1.225c-5.508,0.611-5.508,8.567,0.612,8.567
+                c26.928,1.836,59.364,4.284,91.188,2.448c1.836,1.225,3.672,3.061,5.508,4.284c64.872,45.288,159.732-11.628,229.5-13.464
+                C338.821,223.817,338.821,210.354,330.254,210.966z M89.737,196.277c-6.732-25.091,15.3-46.511,35.496-56.916
+                c20.196-10.404,48.96-10.404,55.692,15.912c7.956,30.6-18.36,48.959-43.452,56.916c-11.628,3.672-22.644,6.12-34.272,7.344
+                C96.47,213.413,92.186,206.069,89.737,196.277z" />
+              <path
+                d="M371.869,211.577c-8.567-5.508-16.523-11.016-24.479-16.523c-6.732-4.896-13.464-10.404-21.42-12.24
+                c-6.12-1.836-12.24,7.344-6.732,11.627c6.732,4.896,14.076,9.18,20.809,13.464c4.896,3.061,9.792,6.732,14.075,9.792
+                c-4.896,2.448-9.792,4.284-14.688,6.732c-3.672,1.836-7.956,3.672-11.628,5.508c-1.224,0.612-2.448,1.836-3.061,3.06
+                c-1.836,2.448-0.611,1.225,0,0.612c-2.447,1.836-2.447,7.956,1.837,7.344l0,0c1.224,0.612,2.447,0.612,4.283,0.612
+                c4.284-1.224,9.181-3.06,13.464-4.896c9.181-3.673,18.36-7.345,26.929-12.24C376.153,220.758,376.153,214.025,371.869,211.577z" />
+            </g>
+          </g>
+        </svg>
+
         <!-- Form -->
-        <div class="w-full lg:w-2/5 bg-white rounded-lg p-8 text-gray-800 shadow-xl relative">
+        <div
+          class="w-full lg:w-2/5 bg-gray-100 rounded-lg p-8 text-gray-800 shadow-xl relative">
           <div class="text-green-600 font-bold mb-4 text-lg flex items-center">
-            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            <svg
+              class="w-5 h-5 mr-2"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
             </svg>
             100% de casos ganados
           </div>
           <h2 class="text-3xl font-bold mb-6 text-gray-900">¡Empecemos!</h2>
           <form>
             <div class="mb-4">
-              <label for="name" class="block mb-2 font-medium text-gray-700">Nombre completo</label>
+              <label for="name" class="block mb-2 font-medium text-gray-700"
+                >Nombre completo</label
+              >
               <input
                 type="text"
                 id="name"
@@ -119,7 +204,9 @@
                 required />
             </div>
             <div class="mb-4">
-              <label for="email" class="block mb-2 font-medium text-gray-700">Tu email</label>
+              <label for="email" class="block mb-2 font-medium text-gray-700"
+                >Tu email</label
+              >
               <input
                 type="email"
                 id="email"
@@ -128,7 +215,9 @@
                 required />
             </div>
             <div class="mb-6">
-              <label for="phone" class="block mb-2 font-medium text-gray-700">Teléfono (opcional)</label>
+              <label for="phone" class="block mb-2 font-medium text-gray-700"
+                >Teléfono (opcional)</label
+              >
               <input
                 type="tel"
                 id="phone"
@@ -156,12 +245,12 @@
 
       <!-- Testimonials -->
       <section class="mt-20">
-        <h2 class="text-3xl font-bold text-center mb-10">
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-900">
           Lo que dicen nuestros clientes
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Testimonio 1 -->
-          <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+          <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
             <div class="flex items-center mb-4">
               <img
                 src="https://i.pravatar.cc/100?img=1"
@@ -172,15 +261,15 @@
                 <p class="text-gray-400 text-sm">Madrid</p>
               </div>
             </div>
-            <p class="text-gray-300">
-              "Gracias a ReclamaRev, recuperé más de 3000€ de mi tarjeta
+            <p class="text-gray-600">
+              "Gracias a ReclamaTech, recuperé más de 3000€ de mi tarjeta
               revolving. El proceso fue rápido y sencillo."
             </p>
-            <div class="text-yellow-400 mt-4">★★★★★</div>
+            <div class="text-yellow-500 mt-4">★★★★★</div>
           </div>
 
           <!-- Testimonio 2 -->
-          <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+          <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
             <div class="flex items-center mb-4">
               <img
                 src="https://i.pravatar.cc/100?img=2"
@@ -191,15 +280,15 @@
                 <p class="text-gray-400 text-sm">Barcelona</p>
               </div>
             </div>
-            <p class="text-gray-300">
-              "Pensé que sería complicado, pero ReclamaRev me guió en todo el
+            <p class="text-gray-600">
+              "Pensé que sería complicado, pero ReclamaTech me guió en todo el
               proceso. En menos de un mes, mi caso estaba resuelto."
             </p>
-            <div class="text-yellow-400 mt-4">★★★★★</div>
+            <div class="text-yellow-500 mt-4">★★★★★</div>
           </div>
 
           <!-- Testimonio 3 -->
-          <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+          <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
             <div class="flex items-center mb-4">
               <img
                 src="https://i.pravatar.cc/100?img=3"
@@ -210,12 +299,12 @@
                 <p class="text-gray-400 text-sm">Valencia</p>
               </div>
             </div>
-            <p class="text-gray-300">
+            <p class="text-gray-600">
               "No sabía que podía reclamar los intereses de mi tarjeta.
-              ReclamaRev me informó y me ayudó a recuperar mi dinero. ¡Increíble
-              servicio!"
+              ReclamaTech me informó y me ayudó a recuperar mi dinero.
+              ¡Increíble servicio!"
             </p>
-            <div class="text-yellow-400 mt-4">★★★★★</div>
+            <div class="text-yellow-500 mt-4">★★★★★</div>
           </div>
         </div>
       </section>
